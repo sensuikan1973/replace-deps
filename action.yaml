@@ -1,0 +1,24 @@
+name: Replace Dependencies
+
+description: replace dependencies in specific extension files.
+
+author: Shimizu Naoki
+
+branding:
+  icon: 'arrow-up'
+  color: 'yellow'
+
+inputs:
+  extension:
+    description: replace target file extension
+    required: true
+  regex:
+    description: replace target regex
+    required: true
+  replacement:
+    description: new string
+    required: true
+
+runs:
+    using: 'node12'
+    main: 'dist/index.js'

@@ -1,0 +1,41 @@
+{
+  "name": "replace-deps",
+  "version": "1.0.0",
+  "description": "replace dependencies in specific extenstion files.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "pack": "ncc build",
+    "all": "npm run build && npm run format && npm run pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensuikan1973/replace-deps.git"
+  },
+  "keywords": [
+    "actions",
+    "html",
+    "javascript",
+    "firebasejs",
+    "firebase"
+  ],
+  "author": "Shimizu Naoki (@sensuikan1973)",
+  "bugs": {
+    "url": "https://github.com/sensuikan1973/replace-deps/issues"
+  },
+  "homepage": "https://github.com/sensuikan1973/replace-deps#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "@types/glob": "7.1.2",
+    "@zeit/ncc": "^0.22.3",
+    "nyc": "^15.1.0",
+    "prettier": "2.0.5",
+    "typescript": "^3.9.5"
+  }
+}

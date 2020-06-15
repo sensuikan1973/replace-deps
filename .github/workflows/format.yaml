@@ -1,0 +1,25 @@
+name: Format
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**.ts'
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - '**.ts'
+
+jobs:
+  format_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm ci
+      - run: npm run format-check
