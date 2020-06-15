@@ -12,7 +12,7 @@ inspired by [GCP/repository-gardener](https://github.com/GoogleCloudPlatform/rep
 ```.yaml
 on:
   schedule:
-    - cron: '0 0 * * *' # UTC
+    - cron: '0 0 * * *'
 
 jobs:
   update_deps_sample:
@@ -24,7 +24,7 @@ jobs:
       - name: fetch latest version
         run: echo '::set-env LATEST_VERSION=$(npm show firebase version)'
       - name: use latest firebase js sdk in all html files
-        uses: actions/replace-deps@master
+        uses: sensuikan1973/replace-deps@v1
         with:
           extension: 'html'
           regex: 'firebasejs/[0-9]*\.[0-9]*\.[0-9]*/'
