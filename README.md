@@ -36,3 +36,7 @@ jobs:
           base: master
           token: ${{ secrets.XXX_TOKEN }}
 ```
+
+## development
+### versioning
+https://github.com/actions/toolkit/blob/master/docs/action-versioning.md#recommendations
