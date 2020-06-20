@@ -1412,7 +1412,6 @@ function run() {
                 if (err != null)
                     return core.setFailed(err);
                 files.forEach((file) => {
-                    console.log(file);
                     const content = fs.readFileSync(file, 'utf-8');
                     const result = content.replace(regex, replacement);
                     fs.writeFileSync(file, result, 'utf-8');
