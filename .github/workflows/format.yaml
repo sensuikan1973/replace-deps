@@ -5,12 +5,12 @@ on:
     branches: [main]
     paths:
       - '**.ts'
-      - 'package.*.json'
+      - 'package*.json'
       - '.prettierrc'
   pull_request:
     paths:
       - '**.ts'
-      - 'package.*.json'
+      - 'package*.json'
       - '.prettierrc'
   workflow_dispatch:
 
