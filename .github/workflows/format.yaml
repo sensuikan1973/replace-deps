@@ -1,13 +1,17 @@
-name: Format
+name: TypeScript CI
 
 on:
   push:
     branches: [main]
     paths:
       - '**.ts'
+      - 'package.*.json'
+      - '.prettierrc'
   pull_request:
     paths:
       - '**.ts'
+      - 'package.*.json'
+      - '.prettierrc'
   workflow_dispatch:
 
 jobs:
