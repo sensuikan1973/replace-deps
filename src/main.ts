@@ -1,6 +1,6 @@
-import * as core from '@actions/core';
-import * as fs from 'fs';
-import * as glob from 'glob';
+import * as core from '@actions/core'
+import * as fs from 'fs'
+import * as glob from 'glob'
 
 async function run(): Promise<void> {
   try {
@@ -14,7 +14,7 @@ async function run(): Promise<void> {
         fs.writeFileSync(file, result, 'utf-8');
       });
     });
-  } catch (err) {
+  } catch (err: any) {
     core.setFailed(err);
   }
 }
