@@ -1,6 +1,6 @@
-import * as core from '@actions/core'
-import * as fs from 'fs'
-import * as glob from 'glob'
+import * as core from '@actions/core';
+import * as fs from 'fs';
+import * as glob from 'glob';
 
 async function run(): Promise<void> {
   try {
