@@ -4,11 +4,13 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/format.yaml'
       - '**.ts'
       - 'package*.json'
       - '.prettierrc'
   pull_request:
     paths:
+      - '.github/workflows/format.yaml'
       - '**.ts'
       - 'package*.json'
       - '.prettierrc'
