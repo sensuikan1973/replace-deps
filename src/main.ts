@@ -14,7 +14,7 @@ async function run(): Promise<void> {
         fs.writeFileSync(file, result, 'utf-8');
       });
     });
-  } catch (err) {
+  } catch (err: any) {
     core.setFailed(err);
   }
 }
