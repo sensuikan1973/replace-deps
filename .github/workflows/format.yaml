@@ -3,7 +3,11 @@ name: Format
 on:
   push:
     branches: [main]
+    paths:
+      - '**.ts'
   pull_request:
+    paths:
+      - '**.ts'
   workflow_dispatch:
 
 jobs:
