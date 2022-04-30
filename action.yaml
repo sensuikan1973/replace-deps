@@ -2,7 +2,7 @@ name: Replace Deps
 
 description: replace dependencies in specific extension files.
 
-author: Shimizu Naoki
+author: sensuikan1973
 
 branding:
   icon: 'arrow-up'
