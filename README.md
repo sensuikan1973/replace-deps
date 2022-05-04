@@ -18,9 +18,7 @@ jobs:
   update_deps_sample:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: master
+      - uses: actions/checkout@v3
       - name: fetch latest version
         run: echo '::set-env LATEST_VERSION=$(npm show firebase version)'
       - name: use latest firebase js sdk in all html files
