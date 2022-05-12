@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/sensuikan1973/replace-deps#readme",
   "dependencies": {
-    "@actions/core": "^1.8.0",
+    "@actions/core": "^1.8.1",
     "@actions/github": "^5.0.1",
     "glob": "^8.0.2"
   },
