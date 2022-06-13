@@ -22,7 +22,7 @@ jobs:
       - name: fetch latest version
         run: echo '::set-env LATEST_VERSION=$(npm show firebase version)'
       - name: use latest firebase js sdk in all html files
-        uses: sensuikan1973/replace-deps@v2
+        uses: sensuikan1973/replace-deps@main
         with:
           extension: 'html'
           regex: 'firebasejs/[0-9]*\.[0-9]*\.[0-9]*/'
