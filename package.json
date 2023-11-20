@@ -39,6 +39,6 @@
     "@zeit/ncc": "^0.22.3",
     "nyc": "^15.1.0",
     "prettier": "^3.1.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }
