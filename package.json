@@ -31,7 +31,7 @@
   "homepage": "https://github.com/sensuikan1973/replace-deps#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.0",
+    "@actions/github": "^6.0.1",
     "glob": "^11.0.2"
   },
   "devDependencies": {
